@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		635B5F8E19C33D44005C648E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 635B5F8D19C33D44005C648E /* main.cpp */; };
 		635B5F9019C33D44005C648E /* HockeySimReboot.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 635B5F8F19C33D44005C648E /* HockeySimReboot.1 */; };
+		635B5F9B19C33F20005C648E /* Players.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 635B5F9919C33F20005C648E /* Players.cpp */; };
+		635B5F9E19C34B3B005C648E /* GM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 635B5F9C19C34B3B005C648E /* GM.cpp */; };
+		635B5FA119C34BA8005C648E /* Teams.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 635B5F9F19C34BA8005C648E /* Teams.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +31,12 @@
 		635B5F8A19C33D44005C648E /* HockeySimReboot */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HockeySimReboot; sourceTree = BUILT_PRODUCTS_DIR; };
 		635B5F8D19C33D44005C648E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		635B5F8F19C33D44005C648E /* HockeySimReboot.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = HockeySimReboot.1; sourceTree = "<group>"; };
+		635B5F9919C33F20005C648E /* Players.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Players.cpp; sourceTree = "<group>"; };
+		635B5F9A19C33F20005C648E /* Players.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Players.h; sourceTree = "<group>"; };
+		635B5F9C19C34B3B005C648E /* GM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GM.cpp; sourceTree = "<group>"; };
+		635B5F9D19C34B3B005C648E /* GM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GM.h; sourceTree = "<group>"; };
+		635B5F9F19C34BA8005C648E /* Teams.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Teams.cpp; sourceTree = "<group>"; };
+		635B5FA019C34BA8005C648E /* Teams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teams.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +70,13 @@
 			isa = PBXGroup;
 			children = (
 				635B5F8D19C33D44005C648E /* main.cpp */,
+				635B5F9C19C34B3B005C648E /* GM.cpp */,
+				635B5F9D19C34B3B005C648E /* GM.h */,
+				635B5F9F19C34BA8005C648E /* Teams.cpp */,
+				635B5FA019C34BA8005C648E /* Teams.h */,
 				635B5F8F19C33D44005C648E /* HockeySimReboot.1 */,
+				635B5F9919C33F20005C648E /* Players.cpp */,
+				635B5F9A19C33F20005C648E /* Players.h */,
 			);
 			path = HockeySimReboot;
 			sourceTree = "<group>";
@@ -117,6 +132,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				635B5FA119C34BA8005C648E /* Teams.cpp in Sources */,
+				635B5F9B19C33F20005C648E /* Players.cpp in Sources */,
+				635B5F9E19C34B3B005C648E /* GM.cpp in Sources */,
 				635B5F8E19C33D44005C648E /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

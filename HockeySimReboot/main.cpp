@@ -7,12 +7,18 @@
 //
 
 #include <iostream>
+#include "Players.h"
+#include <time.h>
+#include <string>
 
-int main(int argc, const char * argv[])
+int main()
 {
-
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    srand(time(NULL));
+    string USER_IN;
+    cout << "What do you want the name to be?" << endl;
+    cin >> USER_IN;
+    
+    Players TestPlayer(USER_IN);
     return 0;
 }
 
