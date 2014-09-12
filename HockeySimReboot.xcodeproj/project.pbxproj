@@ -12,6 +12,8 @@
 		635B5F9B19C33F20005C648E /* Players.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 635B5F9919C33F20005C648E /* Players.cpp */; };
 		635B5F9E19C34B3B005C648E /* GM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 635B5F9C19C34B3B005C648E /* GM.cpp */; };
 		635B5FA119C34BA8005C648E /* Teams.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 635B5F9F19C34BA8005C648E /* Teams.cpp */; };
+		635B5FA619C354C5005C648E /* Startup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 635B5FA419C354C5005C648E /* Startup.cpp */; };
+		635B5FAF19C366BC005C648E /* readPlayerName.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 635B5FAD19C366BC005C648E /* readPlayerName.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +39,10 @@
 		635B5F9D19C34B3B005C648E /* GM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GM.h; sourceTree = "<group>"; };
 		635B5F9F19C34BA8005C648E /* Teams.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Teams.cpp; sourceTree = "<group>"; };
 		635B5FA019C34BA8005C648E /* Teams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Teams.h; sourceTree = "<group>"; };
+		635B5FA419C354C5005C648E /* Startup.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Startup.cpp; path = ../Startup.cpp; sourceTree = "<group>"; };
+		635B5FA519C354C5005C648E /* Startup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Startup.h; path = ../Startup.h; sourceTree = "<group>"; };
+		635B5FAD19C366BC005C648E /* readPlayerName.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = readPlayerName.cpp; sourceTree = "<group>"; };
+		635B5FAE19C366BC005C648E /* readPlayerName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = readPlayerName.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,16 +75,44 @@
 		635B5F8C19C33D44005C648E /* HockeySimReboot */ = {
 			isa = PBXGroup;
 			children = (
-				635B5F8D19C33D44005C648E /* main.cpp */,
-				635B5F9C19C34B3B005C648E /* GM.cpp */,
-				635B5F9D19C34B3B005C648E /* GM.h */,
-				635B5F9F19C34BA8005C648E /* Teams.cpp */,
-				635B5FA019C34BA8005C648E /* Teams.h */,
-				635B5F8F19C33D44005C648E /* HockeySimReboot.1 */,
-				635B5F9919C33F20005C648E /* Players.cpp */,
-				635B5F9A19C33F20005C648E /* Players.h */,
+				635B5FA919C35781005C648E /* Exc */,
+				635B5FA719C354D1005C648E /* SourceCode */,
+				635B5FA819C3555F005C648E /* headers */,
 			);
 			path = HockeySimReboot;
+			sourceTree = "<group>";
+		};
+		635B5FA719C354D1005C648E /* SourceCode */ = {
+			isa = PBXGroup;
+			children = (
+				635B5F9C19C34B3B005C648E /* GM.cpp */,
+				635B5F8D19C33D44005C648E /* main.cpp */,
+				635B5FAD19C366BC005C648E /* readPlayerName.cpp */,
+				635B5F9919C33F20005C648E /* Players.cpp */,
+				635B5FA419C354C5005C648E /* Startup.cpp */,
+				635B5F9F19C34BA8005C648E /* Teams.cpp */,
+			);
+			name = SourceCode;
+			sourceTree = "<group>";
+		};
+		635B5FA819C3555F005C648E /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				635B5FAE19C366BC005C648E /* readPlayerName.h */,
+				635B5F9D19C34B3B005C648E /* GM.h */,
+				635B5F9A19C33F20005C648E /* Players.h */,
+				635B5FA519C354C5005C648E /* Startup.h */,
+				635B5FA019C34BA8005C648E /* Teams.h */,
+			);
+			name = headers;
+			sourceTree = "<group>";
+		};
+		635B5FA919C35781005C648E /* Exc */ = {
+			isa = PBXGroup;
+			children = (
+				635B5F8F19C33D44005C648E /* HockeySimReboot.1 */,
+			);
+			name = Exc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,8 +166,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				635B5FA619C354C5005C648E /* Startup.cpp in Sources */,
 				635B5FA119C34BA8005C648E /* Teams.cpp in Sources */,
 				635B5F9B19C33F20005C648E /* Players.cpp in Sources */,
+				635B5FAF19C366BC005C648E /* readPlayerName.cpp in Sources */,
 				635B5F9E19C34B3B005C648E /* GM.cpp in Sources */,
 				635B5F8E19C33D44005C648E /* main.cpp in Sources */,
 			);

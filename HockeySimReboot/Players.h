@@ -25,14 +25,16 @@ class Players
 private:
     string PLYR_NAME;
 public:
+
     string PLYR_POS;
     int PLYR_DESTAT;
     int PLYR_OFSTAT;
     int PLYR_OVR;
     float PLYR_DESPS, PLYR_DESPG, PLYR_OFSPS, PLYR_OFSPG;
-    Players(string IN_PLYR_NAME);
+    Players(string IN_PLYR_Name);
     void SET_PLYR_OVR();
     void OUT_PLYR_NAME();
+    
 };
 
 #endif /* defined(__HockeySimReboot__Players__) */

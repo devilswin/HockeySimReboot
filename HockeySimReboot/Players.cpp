@@ -13,6 +13,7 @@ Players::Players(string IN_PLYR_Name)
     
    
     PLYR_NAME = IN_PLYR_Name;
+    SET_PLYR_OVR();
     
 }
 void Players::SET_PLYR_OVR() //all of the algorithms to determine the stats

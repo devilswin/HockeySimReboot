@@ -10,15 +10,22 @@
 #include "Players.h"
 #include <time.h>
 #include <string>
-
+#include "readPlayerName.h"
 int main()
 {
     srand(time(NULL));
-    string USER_IN;
-    cout << "What do you want the name to be?" << endl;
-    cin >> USER_IN;
+    //mt19937 rand_engine(time(nullptr));
+    vector<Players> TestPlayer;
+    for (int i = 0; i < 18; i++)
+    {
+        string USER_IN;
+        readPlayerName(USER_IN);
+        Players ForPlayer(USER_IN);
+        TestPlayer.push_back(USER_IN);
+        TestPlayer[i].OUT_PLYR_NAME();
+        cout << TestPlayer[i].PLYR_OVR << endl;
+    }
     
-    Players TestPlayer(USER_IN);
     return 0;
 }
 

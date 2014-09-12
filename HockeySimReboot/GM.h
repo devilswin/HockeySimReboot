@@ -10,15 +10,15 @@
 #define __HockeySimReboot__GM__
 
 #include <iostream>
-#include "Teams.h"
 #include <string>
 #pragma once
 using namespace std;
-class GM:Teams
+class GM
 {
 private:
     string GM_NAME;
 public:
     GM(string USER_GM_NAME);
+    int GM_JOB_SECURITY;    
 };
 #endif /* defined(__HockeySimReboot__GM__) */

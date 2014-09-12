@@ -10,7 +10,9 @@
 #define __HockeySimReboot__Teams__
 
 #include <iostream>
-class Teams
+#include "GM.h"
+#include "Players.h"
+class Teams:Players
 {
     
 };
